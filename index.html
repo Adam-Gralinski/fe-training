@@ -1,0 +1,168 @@
+<!--<?php
+/**
+ * The template for displaying all pages
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages and that
+ * other 'pages' on your WordPress site will use a different template.
+ *
+ * @package WordPress
+ * @subpackage Twenty_Fourteen
+ * @since Twenty Fourteen 1.0
+ */
+?>-->
+<!doctype html>
+    <!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+    <![endif]-->
+    <!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+    <![endif]-->
+    <!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="pl">
+    <!--<![endif]-->
+    <head>
+        <base href="<?php echo get_template_directory_uri(); ?>/" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title><?php wp_title( '|', true, 'right' ); ?></title>
+        <!--[if lt IE 9]>
+        <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+    <body>
+            <div class="main_container header_container">
+                <header class="main_wraper main_header">
+                        <h1 class="main_header__title"><span class="owner_name">John R. Doe</span> Designer &amp; Developer</h1>
+                    <div class="header_socials">
+                        <ul class="social_icons">
+                            <li><a class="social_icons__item social_icons__item--twitter" href="/" >Twitter</a></li>
+                            <li><a class="social_icons__item social_icons__item--facebook" href="/" >Facebook</a></li>
+                            <li><a class="social_icons__item social_icons__item--vevo" href="/" >Vevo</a></li>
+                            <li><a class="social_icons__item social_icons__item--be" href="/" >Be</a></li>
+                            <li><a class="social_icons__item social_icons__item--dribbble" href="/" >Dribbble</a></li>
+                        </ul><!-- .social_icons -->
+                    </div><!-- .header_socials -->
+                </header><!-- .main_header -->
+
+                    <section class="main_wraper slider">
+                        <h3 class="hide">Sliding images</h3>
+                        <ul class="slider__slides">
+                            <li class="slider__item"><img class="slider__image" alt="" src="img/main-slide.jpg"/></li>
+                            <li class="slider__item"><img class="slider__image" alt="" src="img/abstract.jpg"/></li>
+                            <li class="slider__item"><img class="slider__image" alt="" src="img/fashion.jpg"/></li>
+                            <li class="slider__item"><img class="slider__image" alt="" src="img/technics.jpg"/></li>
+                        </ul><!-- .slides -->
+                    </section><!-- .slider -->
+			</div><!-- .header-container -->
+
+			<div class="main_container">
+				<section class="main_wraper introduction_info">
+					<h1 class="introduction_info__primary_header icon--waves">Welcome to my portfolio</h1>
+					<h2 class="introduction_info__secondary_header icon--quote">I make beautiful things happen</h2>
+                    <article class="introduction_info__article" >
+                        <h3 class="introduction_info__article_title icon--person"><a class="introduction_info__link" href="<?php the_permalink(); ?>">A little about me...</a></h3>
+                        <p class="introduction_info__article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus justo, interdum et faucibus luctus, pellentesque sed ante. Cras in nisl et tellus rutrum sodales accumsan ac lorem. Nunc lacinia, eros et pharetra tristique, nibh nunc sollicitudin magna, eget tempor mauris magna nec nibh. Sed convallis tristique nulla.</p>
+                    </article>
+                    <article class="introduction_info__article" >
+                        <h3 class="introduction_info__article_title icon--conversation"><a class="introduction_info__link" href="<?php the_permalink(); ?>">I'm really good at...</a></h3>
+                        <p class="introduction_info__article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus justo, interdum et faucibus luctus, pellentesque sed ante. Cras in nisl et tellus rutrum sodales accumsan ac lorem. Nunc lacinia, eros et pharetra tristique, nibh nunc sollicitudin magna, eget tempor mauris magna nec nibh. Sed convallis tristique nulla.</p>
+                    </article>
+                    <article class="introduction_info__article" >
+                        <h3 class="introduction_info__article_title icon--cog"><a class="introduction_info__link" href="<?php the_permalink(); ?>">Services I provide...</a></h3>
+                        <p class="introduction_info__article_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus justo, interdum et faucibus luctus, pellentesque sed ante. Cras in nisl et tellus rutrum sodales accumsan ac lorem. Nunc lacinia, eros et pharetra tristique, nibh nunc sollicitudin magna, eget tempor mauris magna nec nibh. Sed convallis tristique nulla.</p>
+                    </article>
+				</section><!-- .introduction-info -->
+			</div><!-- .introduction-info-container -->
+
+			<div class="main_container gallery_container" >
+				<section class="main_wraper gallery">
+					<h3 class="hide">Gallery</h3>
+
+						<ul class="gallery__thumbs">
+							<li class="gallery__item"><img class="gallery__image" data-desc="Cześć Przyjacielu 1!" alt="" src="img/thumb-1.jpg" /></li>
+							<li class="gallery__item"><img class="gallery__image" data-desc="Cześć Przyjacielu 2!" alt="" src="img/thumb-2.jpg" /></li>
+							<li class="gallery__item"><img class="gallery__image" data-desc="Cześć Przyjacielu 3!" alt="" src="img/thumb-3.jpg" /></li>
+							<li class="gallery__item"><img class="gallery__image" data-desc="Cześć Przyjacielu 4!" alt="" src="img/thumb-4.jpg" /></li>
+							<li class="gallery__item"><img class="gallery__image" data-desc="Cześć Przyjacielu 5!" alt="" src="img/thumb-5.jpg" /></li>
+							<li class="gallery__item"><img class="gallery__image" data-desc="Cześć Przyjacielu 6!" alt="" src="img/thumb-6.jpg" /></li>
+						</ul>
+
+                    <div class="gallery__big">
+                        <figure class="gallery__big_figure">
+                            <img alt="a woman face" class="gallery__big_photo" src="img/female-face.jpg" />
+                            <figcaption class="gallery__big_figcap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus justo, interdum et faucibus luctus, pellentesque sed ante. </figcaption>
+                        </figure>
+                    </div>
+				</section>
+			</div><!-- .gallery-container -->
+
+			<div class="main_container ">
+				<aside class="main_wraper contact">
+
+						<form  method="POST" class="contact__contact_form">
+							<fieldset class="contact_form__fieldset">
+								<legend class="contact_form__legend">Contact Form</legend>
+								<ul class="contact_form__field_list">
+									<li class="contact_form__field"><label class="contact_form__label icon--person" for="fname"><span class="indent--min">Enter Your Name</span></label>
+									<input data-filters="OnlyLetters" class="contact_form__input"  id="fname" type="text" name="fname" placeholder="Enter your name" /></li>
+									<li class="contact_form__field"><label class="contact_form__label icon--letter" for="femail"><span class="indent--min">Your E-mail</span></label>
+									<input data-filters="Email" class="contact_form__input" id="femail" type="email" name="femail" placeholder="Enter your email address" /></li>
+									<li class="contact_form__field"><label class="contact_form__label icon--globe" for="fwebsite"><span class="indent--min">Your Website</span></label>
+									<input data-filters="Website" class="contact_form__input" id="fwebsite" type="url" name="fwebsite" placeholder="Enter your website url" /></li>
+									<li><label class="contact_form__label hide" for="fmessage"><span class="indent--min">What's your message to John?</span></label>
+									<textarea class="contact_form__textarea" id="fmessage" name="fmessage" ></textarea></li>
+								</ul>
+								<button type="submit" class="contact_form__submit" >Submit</button>
+							</fieldset>
+						</form>
+
+					<div class="contact__personal_info"  itemscope itemtype="http://schema.org/Person">
+						<div class="personal_info__description">
+							<h3 class="hide">About me</h3>
+                            <figure class="personal_info__figure">
+							    <img class="personal_info__photo" alt="john doe" src="img/male-face.jpg" />
+                            </figure>
+							<h4 class="personal_info__h4" ><span class="owner_name" itemprop="name">John Doe</span> Designer &amp; Developer</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis metus justo, interdum et faucibus luctus, pellentesque sed ante. Cras in nisl et tellus rutrum sodales accumsan ac lorem. Nunc lacinia, eros et pharetra tristique, nibh nunc sollicitudin magna, eget tempor mauris magna nec nibh. Sed convallis tristique nulla.</p>
+						</div><!-- .personal-info-description -->
+						<dl class="personal_info__contact clearfix">
+							<dt class="contact__dt">Contact me:</dt>
+								<dd class="contact__dd" itemprop="telephone">123.456.789</dd>
+							<dt class="contact__dt">Email me:</dt>
+								<dd class="contact__dd"><a itemprop="email" href="mailto:johndoe@gmail.com">johndoe@gmail.com</a></dd>
+							<dt class=" follow_me__links follow_me__dt">Follow me:</dt>
+								<dd class="follow_me__dd icon--slash"><a href="/">Twitter</a></dd>
+								<dd class="follow_me__dd icon--slash"><a href="/">Facebook</a></dd>
+								<dd class="follow_me__dd icon--slash"><a href="/">Dribbble</a></dd>
+								<dd class="follow_me__dd "><a href="/">Flickr</a></dd>
+						</dl >
+                        <p>link</p>
+					</div><!-- . personal-info -->
+				</aside><!-- aside-content -->
+
+                <footer class="main_wraper main_footer">
+                    <p class="footer_copyrights">
+                        <small>Copyright &copy; 2015 Jon Doe. All rights reserved.</small>
+                    </p><!-- .footer-copyrights -->
+                    <div class="footer_socials">
+                        <ul class="social_icons">
+                            <li><a class="social_icons__item social_icons__item--twitter" href="/" >Twitter</a></li>
+                            <li><a class="social_icons__item social_icons__item--facebook" href="/" >Facebook</a></li>
+                            <li><a class="social_icons__item social_icons__item--vevo" href="/" >Vevo</a></li>
+                            <li><a class="social_icons__item social_icons__item--be" href="/" >Be</a></li>
+                            <li><a class="social_icons__item social_icons__item--dribbble" href="/" >Dribbble</a></li>
+                        </ul><!-- .social_icons -->
+                    </div><!-- .footer-socials -->
+                </footer><!-- main footer -->
+            </div><!-- .bottom-container -->
+        <script src="js/lib/jquery-1.11.1.min.js" ></script>
+        <script src="js/lib/Slider.js"></script>
+        <script src="js/lib/Gallery.js"></script>
+        <script src="js/lib/validateForm.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+    </html>
+
